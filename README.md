@@ -1,7 +1,16 @@
 # 👨‍🚀 Astro - Portfolio Template
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+<p align="center">
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/github-deploy.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/MrOlivo/mrolivo.github.io/github-deploy.yml?style=for-the-badge&labelColor=363a4f&color=b7bdf8" alt="Deploy to GitHub Pages">
+    </a>
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/issues">
+        <img src="https://img.shields.io/github/issues/MrOlivo/mrolivo.github.io?style=for-the-badge&labelColor=363a4f&color=f5a97f">
+    </a>
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/contributors">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MrOlivo/mrolivo.github.io?style=for-the-badge&labelColor=363a4f&color=a6da95">
+    </a>
+</p>
 
 ![Template](https://github.com/MaeWolff/astro-portfolio-template/blob/main/public/opengraph-image.jpg)
 
