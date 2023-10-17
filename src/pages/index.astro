@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
@@ -17,7 +17,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 });
 ---
 
-<Layout>
+<Layout title={presentation.title}>
   <main class="flex flex-col gap-20">
     <article
       class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
@@ -85,6 +85,48 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           projects.length !== 0 &&
             projects.map((project) => <ProjectCard {...project} />)
         }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Tech Stack</h3>
+      </header>
+      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
+
+      <section class="flex flex-col gap-4">
+        <div>
+          <h4 class="text-base text-neutral-100">Programming languages</h4>
+          <img
+            class="h-16 text-start my-4"
+            src="https://skillicons.dev/icons?i=js,ts,cs,java,php"
+            alt="Skills"
+          />
+        </div>
+        <div>
+          <h4 class="text-base text-neutral-100">Frameworks and Libraries</h4>
+          <img
+            class="h-16 text-start my-4"
+            src="https://skillicons.dev/icons?i=bootstrap,nodejs,react,laravel,astro,tailwind"
+            alt="Skills"
+          />
+        </div>
+        <div>
+          <h4 class="text-base text-neutral-100">Data Base Management Systems</h4>
+          <img
+            class="h-16 text-start my-4"
+            src="https://skillicons.dev/icons?i=mysql"
+            alt="Skills"
+          />
+        </div>
+        <div>
+          <h4 class="text-base text-neutral-100">Tools</h4>
+          <img
+            class="h-16 text-start my-4"
+            src="https://skillicons.dev/icons?i=vscode,idea,figma,linux"
+            alt="Skills"
+          />
+        </div>
       </section>
     </article>
 
