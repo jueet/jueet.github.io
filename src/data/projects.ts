@@ -13,7 +13,7 @@ const projects: Project[] = [
   },
   {
     title: "Portfolio / Brutalism Concept Website",
-    techs: ["Astro", "Vanilla CSS"],
+    techs: ["Astro", "CSS3"],
     link: "https://github.com/MrOlivo/Brutalism-UI",
   },
   {
@@ -22,10 +22,14 @@ const projects: Project[] = [
     link: "/",
   },
   {
-    title: "Portfolio / Kawaii web",
-    techs: ["Next.js", "Tailwind"],
-    link: "/",
-    isComingSoon: true
+    title: "Portfolio / Jokes",
+    techs: ["Laravel", "Bootstrap"],
+    link: "https://github.com/MrOlivo/bromas-laravel",
+  },
+  {
+    title: "Portfolio / Password Generator",
+    techs: ["React", "CSS3"],
+    link: "https://github.com/MrOlivo/password-generator",
   },
 ];
 
