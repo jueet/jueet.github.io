@@ -19,10 +19,6 @@ const presentation: Presentation = {
     "A *software developer* and well-known *bookworm*. I love new technologies, and I'm constantly looking for something interesting to play around with. If you've got something, let me know!",
   socials: [
     {
-      label: "Dribbble",
-      link: "https://dribbble.com/xconnect",
-    },
-    {
       label: "Behance",
       link: "https://behance.net/xconnect",
     },
@@ -35,7 +31,7 @@ const presentation: Presentation = {
       link: "https://linkedin.com/in/edwin-olivo-garcia/",
     },
     {
-      label: "Github",
+      label: "GitHub",
       link: "https://github.com/MrOlivo",
     },
   ],
