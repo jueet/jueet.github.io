@@ -98,7 +98,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <div>
           <h4 class="text-base text-neutral-100">Programming languages</h4>
           <img
-            class="h-16 text-start my-4"
+            class="text-start my-4 skillicons"
             src="https://skillicons.dev/icons?i=js,ts,cs,java,php"
             alt="Skills"
           />
@@ -106,15 +106,17 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <div>
           <h4 class="text-base text-neutral-100">Frameworks and Libraries</h4>
           <img
-            class="h-16 text-start my-4"
+            class="text-start my-4 skillicons"
             src="https://skillicons.dev/icons?i=bootstrap,nodejs,react,laravel,astro,tailwind"
             alt="Skills"
           />
         </div>
         <div>
-          <h4 class="text-base text-neutral-100">Data Base Management Systems</h4>
+          <h4 class="text-base text-neutral-100">
+            Data Base Management Systems
+          </h4>
           <img
-            class="h-16 text-start my-4"
+            class="text-start my-4 skillicons"
             src="https://skillicons.dev/icons?i=mysql"
             alt="Skills"
           />
@@ -122,7 +124,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <div>
           <h4 class="text-base text-neutral-100">Tools</h4>
           <img
-            class="h-16 text-start my-4"
+            class="text-start my-4 skillicons"
             src="https://skillicons.dev/icons?i=vscode,idea,figma,linux"
             alt="Skills"
           />
@@ -145,3 +147,26 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     </article>
   </main>
 </Layout>
+
+<script>
+  const imgElements: HTMLImageElement[] = Array.from(
+    document.querySelectorAll(".skillicons")
+  );
+
+  const handleMediaQuery = (mql: MediaQueryList) => {
+    const perlineParam = "&perline=5";
+    imgElements.forEach(
+      (imgElement: HTMLImageElement) =>
+        (imgElement.src = mql.matches
+          ? imgElement.src + perlineParam
+          : imgElement.src.replace(perlineParam, ""))
+    );
+  };
+
+  // Initial check for media query
+  const mediaQuery = window.matchMedia("(max-width: 411px)");
+  handleMediaQuery(mediaQuery);
+
+  // Event listener for media query changes
+  mediaQuery.addEventListener("change", () => handleMediaQuery(mediaQuery));
+</script>
