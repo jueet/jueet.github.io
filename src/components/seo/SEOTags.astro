@@ -44,10 +44,17 @@ const openGraph = {
     extend={{
       link: [
         { rel: "icon", href: "/favicon.svg" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "icon", href: "/favicon-32x32.png", type: "image/png" },
+        { rel: "icon", href: "/favicon-16x16.png", type: "image/png" },
+        { rel: "manifest", href: "/site.webmanifest" },
+        { rel: "mask-icon", href: "/safari-pinned-tab.svg" },
         { rel: "sitemap", href: "/sitemap-index.xml" },
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "msapplication-TileColor", content: "#da532c" },
+        { name: "theme-color", content: "#ffffff" },
         { name: "generator", content: Astro.generator },
         {
           name: "twitter:image",
