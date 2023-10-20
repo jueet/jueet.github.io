@@ -1,0 +1,20 @@
+---
+import type { Skill } from "@/data/skills";
+
+type Props = Skill;
+
+const { title, techs } = Astro.props;
+
+const imageUrl = `https://skillicons.dev/icons?i=${techs.join(",")}`;
+---
+
+<div
+  class="group flex w-full flex-col items-start justify-between gap-4 rounded-md border border-neutral-700 p-4 md:flex-row md:items-center"
+>
+  <h4 class="text-base text-neutral-100">{title}</h4>
+  <img
+    class="skillicons m-0 text-start"
+    src={imageUrl}
+    alt="Icons of several programming technologies."
+  />
+</div>

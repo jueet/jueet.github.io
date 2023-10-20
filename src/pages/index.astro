@@ -6,11 +6,13 @@ import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
+import SkillCard from "@/components/SkillCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import skills from "@/data/skills";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
@@ -92,43 +94,10 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">Tech Stack</h3>
       </header>
-      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
+      {skills.length === 0 && <p>Oops, I must work^^^^^</p>}
 
       <section class="flex flex-col gap-4">
-        <div>
-          <h4 class="text-base text-neutral-100">Programming languages</h4>
-          <img
-            class="text-start my-4 skillicons"
-            src="https://skillicons.dev/icons?i=js,ts,cs,java,php"
-            alt="Skills"
-          />
-        </div>
-        <div>
-          <h4 class="text-base text-neutral-100">Frameworks and Libraries</h4>
-          <img
-            class="text-start my-4 skillicons"
-            src="https://skillicons.dev/icons?i=bootstrap,nodejs,react,laravel,astro,tailwind"
-            alt="Skills"
-          />
-        </div>
-        <div>
-          <h4 class="text-base text-neutral-100">
-            Data Base Management Systems
-          </h4>
-          <img
-            class="text-start my-4 skillicons"
-            src="https://skillicons.dev/icons?i=mysql"
-            alt="Skills"
-          />
-        </div>
-        <div>
-          <h4 class="text-base text-neutral-100">Tools</h4>
-          <img
-            class="text-start my-4 skillicons"
-            src="https://skillicons.dev/icons?i=vscode,idea,figma,linux"
-            alt="Skills"
-          />
-        </div>
+        {skills.length !== 0 && skills.map((skill) => <SkillCard {...skill} />)}
       </section>
     </article>
 
