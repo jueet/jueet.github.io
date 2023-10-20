@@ -1,12 +1,30 @@
 ---
+import Icon from "astro-icon";
+
+type Props = {
+  iconOpen?: string;
+  iconClosed?: string;
+};
+
+const { iconOpen = "mdi:minus", iconClosed = "mdi:plus" } = Astro.props;
 ---
 
 <div
   class="accordion-group group flex w-full flex-col justify-between rounded-md border border-neutral-700 transition"
 >
   <div
-    class="accordion-header flex h-16 cursor-pointer items-center space-x-5 px-5 transition"
+    class="accordion-header flex h-16 cursor-pointer items-center px-5 transition"
   >
+    <Icon
+      name={iconClosed}
+      class="mr-5 h-8 text-white"
+      id="accordion-icon-open"
+    />
+    <Icon
+      name={iconOpen}
+      class="mr-5 hidden h-8 text-white"
+      id="accordion-icon-closed"
+    />
     <slot name="header" />
   </div>
   <div class="accordion-content max-h-0 overflow-hidden px-5 pt-0">
@@ -24,14 +42,22 @@
     document.querySelectorAll(".accordion-content")
   );
 
-  accordionHeader.forEach((header: Element, index: number) => {  
+  accordionHeader.forEach((header: Element, index: number) => {
     header.addEventListener("click", () => {
+      toggleIcon(header);
       toggleAccordionContent(index);
     });
   });
 
+  function toggleIcon(header: Element) {
+    const icon = header.querySelector("#accordion-icon-open") as HTMLElement;
+    const icon2 = header.querySelector("#accordion-icon-closed") as HTMLElement;
+    icon.classList.toggle("hidden");
+    icon2.classList.toggle("hidden");
+  }
+
   function toggleAccordionContent(index: number) {
-    const content = accordionContent[index]
+    const content = accordionContent[index];
     const accordionMaxHeight = content.style.maxHeight;
 
     // Condition handling
