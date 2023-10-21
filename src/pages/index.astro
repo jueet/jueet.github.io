@@ -1,13 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
-import Layout from "@/layouts/Layout.astro";
-import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import SkillCard from "@/components/SkillCard.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
 import Link from "@/components/shared/Link.astro";
+import Layout from "@/layouts/Layout.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
@@ -99,20 +99,6 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <section class="flex flex-col gap-4">
         {skills.length !== 0 && skills.map((skill) => <SkillCard {...skill} />)}
       </section>
-    </article>
-
-    <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Get in touch</h3>
-      </header>
-      <p>
-        Email me at <Link
-          href={`mailto:${presentation.mail}`}
-          label={presentation.mail}
-        /> or follow me via my social links.
-      </p>
-
-      <SocialLinks />
     </article>
   </main>
 </Layout>
