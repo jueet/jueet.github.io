@@ -12,7 +12,7 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "edwin@proton.me",
+  mail: "edwin.olivo@outlook.com",
   title: "Hi, I'm Edwin Olivo 👋",
   profile: "https://avatars.githubusercontent.com/u/46498127?v=4",
   description:
