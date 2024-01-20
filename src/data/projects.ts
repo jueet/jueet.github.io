@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "Portfolio / Jokes",
     techs: ["Laravel", "Bootstrap"],
-    link: "https://github.com/MrOlivo/bromas-laravel",
+    link: "https://github.com/MrOlivo/mrolivo.github.io.git",
   },
   {
     title: "Portfolio / Password Generator",
