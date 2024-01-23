@@ -1,6 +1,6 @@
 export default function convertSlugToCapitalizedWords(slug: string): string {
   const words = slug.split("-");
-  const capitalizedWords = words.map(word => capitalizeFirstLetter(word));
+  const capitalizedWords = words.map((word) => capitalizeFirstLetter(word));
   const capitalizedText = capitalizedWords.join(" ");
   return capitalizedText;
 }
