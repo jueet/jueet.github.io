@@ -10,7 +10,6 @@ import Link from "@/components/shared/Link.astro";
 import presentation from "@/data/presentation";
 import "@/styles/post.css";
 import "@/styles/tailwind.css";
-import "@fontsource/open-sans";
 
 export type Props = HeadTags;
 
@@ -28,11 +27,6 @@ const headTags = Astro.props;
     <BlurCircle position="top" color={theme.colors.blur.top} />
     <BlurCircle position="bottom" color={theme.colors.blur.bottom} />
     <slot />
-    <style is:global>
-      html {
-        font-family: "Open Sans";
-      }
-    </style>
     <footer>
       <article class="flex flex-col gap-8" id="contact">
         <header class="flex w-full flex-row justify-between gap-2">

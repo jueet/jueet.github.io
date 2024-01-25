@@ -2,6 +2,7 @@
 import { SEO } from "astro-seo";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 
 type Props = HeadTags;
 
@@ -66,5 +67,8 @@ const openGraph = {
         { name: "twitter:site", content: "@itsstormzz_" },
       ],
     }}
+  />
+  <GoogleFontsOptimizer
+    url="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
   />
 </head>
