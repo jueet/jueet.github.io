@@ -2,6 +2,7 @@
 import presentation from "@/data/presentation";
 import removeTrailingSlash from "@/utils/removeTrailingSlash";
 import Link from "./shared/Link.astro";
+import NavItem from "@/components/NavItem.astro";
 
 const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
@@ -13,43 +14,15 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
     isUnderline
   />
 
-  <nav role="navigation">
-    <ul role="list" class="flex flex-row gap-2">
-      <li>
-        <a
-          href="/"
-          class:list={{
-            ["hover:text-neutral-100"]: true,
-          }}>Home</a
-        >
-      </li>
+  <nav role="navigation" class="pt-4 md:pt-0">
+    <ul role="list" class="flex flex-row gap-2 items-center text-center">
+      <NavItem title="home" path="/"/>
       <li>/</li>
-      <li>
-        <a
-        href="#projects"
-        class:list={{
-          ["hover:text-neutral-100"]: true,
-        }}>Projects</a
-        >
-      </li>
+      <NavItem title="projects" path="#projects"/>
       <li>/</li>
-      <li>
-        <a
-        href="#stack"
-        class:list={{
-          ["hover:text-neutral-100"]: true,
-        }}>Tech Stack</a
-        >
-      </li>
+      <NavItem title="stack" path="#stack"/>
       <li>/</li>
-      <li>
-        <a
-          href="#contact"
-          class:list={{
-            ["hover:text-neutral-100"]: true,
-          }}>Get in touch</a
-        >
-      </li>
+      <NavItem title="contact" path="#contact"/>
     </ul>
   </nav>
 </header>
