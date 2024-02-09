@@ -33,12 +33,23 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "MrOlivo",
+      "name": "Edwin Olivo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46498127?v=4",
+      "profile": "https://bit.ly/mrolivo",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "skipCi": true,
   "repoType": "github",
   "repoHost": "https://github.com",
-  "projectName": "astro-portfolio-template",
-  "projectOwner": "MaeWolff"
+  "projectName": "mrolivo.github.io",
+  "projectOwner": "MrOlivo"
 }
