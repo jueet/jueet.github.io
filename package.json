@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "pnpm prettier -w src/ --plugin-search-dir=.",
+    "format:astro": "pnpm prettier -w src/components/*.astro --plugin-search-dir=."
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.5",
