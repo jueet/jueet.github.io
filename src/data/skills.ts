@@ -18,7 +18,11 @@ const skills: Skill[] = [
   },
   {
     title: "Tools",
-    techs: ["vscode", "idea", "figma", "linux"],
+    techs: ["vscode", "figma", "pnpm", "vite"],
+  },
+  {
+    title: "OS",
+    techs: ["windows", "apple", "linux", "ubuntu", "redhat"],
   },
 ];
 
