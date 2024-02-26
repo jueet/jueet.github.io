@@ -7,10 +7,11 @@ import SocialLinks from "@/components/SocialLinks.astro";
 import Layout from "@/layouts/Layout.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
+import certifications from "@/data/certifications";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
-import certifications from "@/data/certifications";
 import skills from "@/data/skills";
+import theme from "@/data/theme";
 import avatar from "@/images/46498127.png";
 ---
 
@@ -57,7 +58,9 @@ import avatar from "@/images/46498127.png";
       <section class="flex flex-col gap-4">
         {
           projects.length !== 0 &&
-            projects.map((project) => <ProjectCard {...project} color="orange" />)
+            projects.map((project) => (
+              <ProjectCard {...project} color={theme.colors.blur.top} />
+            ))
         }
       </section>
     </article>
@@ -77,16 +80,16 @@ import avatar from "@/images/46498127.png";
     <!-- Certificates -->
     <article class="flex flex-col gap-8" id="certs">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
-          Certifications
-        </h3>
+        <h3 class="text-lg text-neutral-100">Certifications</h3>
       </header>
       {certifications.length === 0 && <p>Oops, I must study^^^^^</p>}
 
       <section class="flex flex-col gap-4">
         {
           certifications.length !== 0 &&
-            certifications.map((cert) => <ProjectCard {...cert} color="emerald" />)
+            certifications.map((cert) => (
+              <ProjectCard {...cert} color={theme.colors.blur.bottom} />
+            ))
         }
       </section>
     </article>
