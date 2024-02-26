@@ -1,7 +1,4 @@
-export type Skill = {
-  title: string;
-  techs: string[];
-};
+import type { Skill } from "@/types";
 
 const skills: Skill[] = [
   {
