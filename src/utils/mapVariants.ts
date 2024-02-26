@@ -1,4 +1,4 @@
-import type { TailwindColor } from "./types/tailwind";
+import type { TailwindColor } from "@/types/tailwind";
 
 const MAP_COLOR_VARIANT_TO_BG: Record<TailwindColor, string> = {
   orange: "bg-orange-500",
@@ -38,4 +38,4 @@ const MAP_COLOR_VARIANT_TO_TEXT: Record<TailwindColor, string> = {
   rose: "text-rose-500",
 };
 
-export { MAP_COLOR_VARIANT_TO_BG, MAP_COLOR_VARIANT_TO_TEXT };
+export { MAP_COLOR_VARIANT_TO_BG, MAP_COLOR_VARIANT_TO_TEXT, };

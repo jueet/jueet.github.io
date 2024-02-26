@@ -1,9 +1,11 @@
 ---
-import type { Project } from "@/data/projects";
+import type { Project } from "@/types";
+import type { TailwindColor } from "@/types/tailwind";
+import { MAP_COLOR_VARIANT_TO_BG } from "@/utils/mapVariants";
 
-type Props = Project;
+type Props = Project & { color: TailwindColor };
 
-const { title, techs, link, isComingSoon } = Astro.props;
+const { title, techs, link, isComingSoon, color } = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -26,7 +28,10 @@ const formatTechs = (values: string[]) =>
   {
     !isComingSoon && (
       <a
-        class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/50 md:flex-row md:items-center"
+        class:list={[`group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg md:flex-row md:items-center`,
+        `hover:shadow-${color}-500`,
+        `hover:border-${color}-500`,
+      ]}
         href={link}
         target="_blank"
         rel="noreferrer"

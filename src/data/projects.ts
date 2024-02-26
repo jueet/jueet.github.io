@@ -1,9 +1,4 @@
-export type Project = {
-  title: string;
-  techs: string[];
-  link: string;
-  isComingSoon?: boolean;
-};
+import type { Project } from "@/types";
 
 const projects: Project[] = [
   {

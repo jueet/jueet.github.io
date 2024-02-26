@@ -1,15 +1,4 @@
-type Social = {
-  label: string;
-  link: string;
-};
-
-type Presentation = {
-  mail: string;
-  title: string;
-  description: string;
-  socials: Social[];
-  profile?: string;
-};
+import type { Presentation } from "@/types";
 
 const presentation: Presentation = {
   mail: "edwin.olivo@outlook.com",

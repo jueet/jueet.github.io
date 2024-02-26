@@ -1,5 +1,5 @@
 import theme from "@/data/theme";
-import { MAP_COLOR_VARIANT_TO_TEXT } from "./mapVariants";
+import { MAP_COLOR_VARIANT_TO_TEXT } from "@/utils/mapVariants";
 
 export default function convertAsteriskToStrongTag(str: string) {
   return str.replace(

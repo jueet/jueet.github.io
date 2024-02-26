@@ -1,5 +1,5 @@
 ---
-import type { TailwindColor } from "@/utils/types/tailwind";
+import type { TailwindColor } from "@/types/tailwind";
 import { MAP_COLOR_VARIANT_TO_BG } from "@/utils/mapVariants";
 
 type Props = {
@@ -9,7 +9,6 @@ type Props = {
 
 const { position, color } = Astro.props;
 ---
-
 <div
   class:list={{
     [`fixed z-0 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full ${MAP_COLOR_VARIANT_TO_BG[color]} blur-[150px] md:blur-[175px] opacity-50`]: true,
