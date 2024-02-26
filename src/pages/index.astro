@@ -9,6 +9,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import certifications from "@/data/certifications";
 import skills from "@/data/skills";
 import avatar from "@/images/46498127.png";
 ---
@@ -44,6 +45,7 @@ import avatar from "@/images/46498127.png";
       </div>
     </article>
 
+    <!-- Projects -->
     <article class="flex flex-col gap-8" id="projects">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
@@ -55,11 +57,12 @@ import avatar from "@/images/46498127.png";
       <section class="flex flex-col gap-4">
         {
           projects.length !== 0 &&
-            projects.map((project) => <ProjectCard {...project} />)
+            projects.map((project) => <ProjectCard {...project} color="orange" />)
         }
       </section>
     </article>
 
+    <!-- Technologies -->
     <article class="flex flex-col gap-8" id="stack">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">Tech Stack</h3>
@@ -68,6 +71,23 @@ import avatar from "@/images/46498127.png";
 
       <section class="flex flex-col gap-4">
         {skills.length !== 0 && skills.map((skill) => <SkillCard {...skill} />)}
+      </section>
+    </article>
+
+    <!-- Certificates -->
+    <article class="flex flex-col gap-8" id="certs">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Certifications
+        </h3>
+      </header>
+      {certifications.length === 0 && <p>Oops, I must study^^^^^</p>}
+
+      <section class="flex flex-col gap-4">
+        {
+          certifications.length !== 0 &&
+            certifications.map((cert) => <ProjectCard {...cert} color="emerald" />)
+        }
       </section>
     </article>
   </main>
