@@ -1,5 +1,6 @@
 ---
 import type { HTMLAttributes } from "astro/types";
+import theme from "@/data/theme";
 
 type Props = HTMLAttributes<"a"> & {
   label: string;
@@ -13,7 +14,7 @@ const { label, isUnderline, ...props } = Astro.props;
   href={props.href}
   class:list={{
     ["hover:text-neutral-100 cursor-pointer"]: true,
-    ["underline decoration-dashed underline-offset-8 hover:decoration-orange-500"]: isUnderline,
+    [`underline decoration-dashed underline-offset-8 hover:decoration-${theme.colors.primary}-500`]: isUnderline,
   }}
   {...props}
   rel="noreferrer"

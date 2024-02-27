@@ -25,6 +25,10 @@ module.exports = {
     },
     {
       pattern: /bg-(orange|violet|red|amber|yellow|lime|green|emerald|teal|cyan|blue|indigo|purple|fushia|pink|rose)-500/,
+    },
+    {
+      pattern: /decoration-(orange|violet|red|amber|yellow|lime|green|emerald|teal|cyan|blue|indigo|purple|fushia|pink|rose)-500/,
+      variants: ["hover"]
     }
   ]
 };
