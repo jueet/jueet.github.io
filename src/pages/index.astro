@@ -1,18 +1,18 @@
 ---
 import { Image } from "astro:assets";
 
-import ProjectCard from "@/components/ProjectCard.astro";
-import SkillCard from "@/components/SkillCard.astro";
-import SocialLinks from "@/components/SocialLinks.astro";
-import Layout from "@/layouts/Layout.astro";
-import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
+import ProjectCard from "@components/ProjectCard.astro";
+import SkillCard from "@components/SkillCard.astro";
+import SocialLinks from "@components/SocialLinks.astro";
+import Layout from "@layouts/Layout.astro";
+import convertAsteriskToStrongTag from "@utils/convertAsteriskToStrongTag";
 
-import certifications from "@/data/certifications";
-import presentation from "@/data/presentation";
-import projects from "@/data/projects";
-import skills from "@/data/skills";
-import theme from "@/data/theme";
-import avatar from "@/images/46498127.png";
+import certifications from "@data/certifications";
+import presentation from "@data/presentation";
+import projects from "@data/projects";
+import skills from "@data/skills";
+import theme from "@data/theme";
+import avatar from "@images/46498127.png";
 ---
 
 <Layout title={presentation.title}>

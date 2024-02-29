@@ -1,4 +1,4 @@
-import type { Certification } from "@/types";
+import type { Certification } from "@types";
 
 const certifications: Certification[] = [
   {

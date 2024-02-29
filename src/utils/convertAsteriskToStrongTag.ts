@@ -1,4 +1,4 @@
-import theme from "@/data/theme";
+import theme from "@data/theme";
 
 export default function convertAsteriskToStrongTag(str: string) {
   return str.replace(

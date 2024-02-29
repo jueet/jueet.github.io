@@ -1,4 +1,4 @@
-import type { TailwindColor } from "@/types/tailwind";
+import type { TailwindColor } from "./tailwind";
 
 export interface Theme {
   colors: {
@@ -36,3 +36,16 @@ export interface Project {
 };
 
 export interface Certification extends Project {}
+
+export interface HeadTags {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+  og?: {
+    title: string;
+    type: string;
+    description: string;
+    image: string;
+    alt: string;
+  };
+};

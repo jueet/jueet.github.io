@@ -1,4 +1,4 @@
-import type { Presentation } from "@/types";
+import type { Presentation } from "@types";
 
 const presentation: Presentation = {
   mail: "edwin.olivo@outlook.com",

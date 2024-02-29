@@ -1,10 +1,8 @@
 ---
-import presentation from "@/data/presentation";
-import removeTrailingSlash from "@/utils/removeTrailingSlash";
-import Link from "./shared/Link.astro";
-import NavItem from "@/components/NavItem.astro";
-
-const pathname = removeTrailingSlash(Astro.url.pathname);
+import Navbar from "@components/Navbar.astro";
+import ToggleNav from "@components/ToggleNav.astro";
+import Link from "@components/shared/Link.astro";
+import presentation from "@data/presentation";
 ---
 
 <header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
