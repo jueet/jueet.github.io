@@ -8,5 +8,9 @@ const { title, path } = Astro.props;
 ---
 
 <li>
-  <a href={path} class="capitalize hover:text-neutral-100">{title}</a>
+  <a
+    href={path}
+    class="flex items-center py-2 capitalize hover:text-neutral-200 lg:px-3"
+    >{title}</a
+  >
 </li>

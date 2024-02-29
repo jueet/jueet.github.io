@@ -5,19 +5,25 @@ import Link from "@components/shared/Link.astro";
 import presentation from "@data/presentation";
 ---
 
-<header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
-  <Link
-    href={`mailto:${presentation.mail}`}
-    label={presentation.mail}
-    isUnderline
-  />
+<header
+  class="z-40 flex w-full flex-col justify-between gap-2 md:flex-row md:justify-between"
+>
+  <div class="flex w-full items-center justify-between lg:w-auto">
+    <Link
+      href={`mailto:${presentation.mail}`}
+      label="Email Address"
+      isUnderline
+    />
+    <ToggleNav id="nav-toggler" />
+  </div>
 
-  <nav role="navigation" class="pt-4 md:pt-0">
-    <ul role="list" class="flex flex-row items-center gap-2 text-center">
-      <NavItem title="home" path="/" />
-      <NavItem title="projects" path="#projects" />
-      <NavItem title="stack" path="#stack" />
-      <NavItem title="contact" path="#contact" />
-    </ul>
-  </nav>
+<script>
+  const button = document.getElementById("nav-toggler");
+  const menu = document.getElementById("mobile-menu");
+
+  button?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+</script>
+  <Navbar id="mobile-menu" />
 </header>
