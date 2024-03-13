@@ -2,10 +2,10 @@ import type { Theme } from "@types";
 
 const theme: Theme = {
   colors: {
-    primary: "emerald",
+    primary: "indigo",
     blur: {
-      top: "blue",
-      bottom: "emerald",
+      top: "indigo",
+      bottom: "fuchsia",
     },
   },
 };
