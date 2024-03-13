@@ -13,10 +13,10 @@
     "format:astro": "pnpm prettier -w src/components/*.astro --plugin-search-dir=."
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/open-sans": "^5.0.22",
-    "astro": "^3.6.4",
+    "@fontsource/open-sans": "^5.0.26",
+    "astro": "^3.6.5",
     "astro-google-fonts-optimizer": "^0.2.2",
     "astro-icon": "^0.8.2",
     "astro-robots-txt": "^1.0.0",
