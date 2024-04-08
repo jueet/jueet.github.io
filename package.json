@@ -13,16 +13,16 @@
     "format:astro": "pnpm prettier -w src/components/*.astro --plugin-search-dir=."
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/sitemap": "^3.1.2",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/open-sans": "^5.0.26",
+    "@fontsource/open-sans": "^5.0.27",
     "astro": "^3.6.5",
     "astro-google-fonts-optimizer": "^0.2.2",
     "astro-icon": "^0.8.2",
     "astro-robots-txt": "^1.0.0",
     "astro-seo": "0.8.0",
-    "sharp": "^0.33.2",
-    "tailwindcss": "^3.4.1"
+    "sharp": "^0.33.3",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "5.59.7",
