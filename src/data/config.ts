@@ -1,1 +1,1 @@
-export const SITE_URL = "https://mrolivo.github.io/";
+export const SITE_URL = "https://jueet.github.io/";
