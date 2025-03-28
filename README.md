@@ -1,8 +1,8 @@
 # 👨‍🚀 Astro - Portfolio Template
 
-[![GitHub contributors](https://img.shields.io/github/contributors/MrOlivo/mrolivo.github.io?style=for-the-badge&labelColor=363a4f&color=a6da95)](https://github.com/MrOlivo/mrolivo.github.io/contributors)
-[![Deploy to GitHub Pages](https://img.shields.io/github/actions/workflow/status/MrOlivo/mrolivo.github.io/github-deploy.yml?style=for-the-badge&labelColor=363a4f&color=b7bdf8)](https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/github-deploy.yml)
-[![GitHub issues](https://img.shields.io/github/issues/MrOlivo/mrolivo.github.io?style=for-the-badge&labelColor=363a4f&color=f5a97f)](https://github.com/MrOlivo/mrolivo.github.io/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/jueet/jueet.github.io?style=for-the-badge&labelColor=363a4f&color=a6da95)](https://github.com/jueet/jueet.github.io/contributors)
+[![Deploy to GitHub Pages](https://img.shields.io/github/actions/workflow/status/jueet/jueet.github.io/github-deploy.yml?style=for-the-badge&labelColor=363a4f&color=b7bdf8)](https://github.com/jueet/jueet.github.io/actions/workflows/github-deploy.yml)
+[![GitHub issues](https://img.shields.io/github/issues/jueet/jueet.github.io?style=for-the-badge&labelColor=363a4f&color=f5a97f)](https://github.com/jueet/jueet.github.io/issues)
 
 ![Template](https://github.com/MaeWolff/astro-portfolio-template/blob/main/public/opengraph-image.jpg)
 
@@ -35,10 +35,10 @@ All commands are run from the root of the project, from a terminal:
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/SterbenVD"><img src="https://avatars.githubusercontent.com/u/90999906?v=4?s=100" width="100px;" alt="Vishal Vijay Devadiga"/><br /><sub><b>Vishal Vijay Devadiga</b></sub></a><br /><a href="https://github.com/MrOlivo/mrolivo.github.io/commits?author=SterbenVD" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/khushChopra"><img src="https://avatars.githubusercontent.com/u/43996455?v=4?s=100" width="100px;" alt="Khush Chopra"/><br /><sub><b>Khush Chopra</b></sub></a><br /><a href="https://github.com/MrOlivo/mrolivo.github.io/commits?author=khushChopra" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/SterbenVD"><img src="https://avatars.githubusercontent.com/u/90999906?v=4?s=100" width="100px;" alt="Vishal Vijay Devadiga"/><br /><sub><b>Vishal Vijay Devadiga</b></sub></a><br /><a href="https://github.com/jueet/jueet.github.io/commits?author=SterbenVD" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/khushChopra"><img src="https://avatars.githubusercontent.com/u/43996455?v=4?s=100" width="100px;" alt="Khush Chopra"/><br /><sub><b>Khush Chopra</b></sub></a><br /><a href="https://github.com/jueet/jueet.github.io/commits?author=khushChopra" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://jbrave.ir"><img src="https://avatars.githubusercontent.com/u/57140027?v=4?s=100" width="100px;" alt="Javad Shoja"/><br /><sub><b>Javad Shoja</b></sub></a><br /><a href="#maintenance-javadshoja" title="Maintenance">🚧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://bit.ly/mrolivo"><img src="https://avatars.githubusercontent.com/u/46498127?v=4?s=100" width="100px;" alt="Edwin Olivo"/><br /><sub><b>Edwin Olivo</b></sub></a><br /><a href="https://github.com/MrOlivo/mrolivo.github.io/commits?author=MrOlivo" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://bit.ly/jueet"><img src="https://avatars.githubusercontent.com/u/46498127?v=4?s=100" width="100px;" alt="Edwin Olivo"/><br /><sub><b>Edwin Olivo</b></sub></a><br /><a href="https://github.com/jueet/jueet.github.io/commits?author=jueet" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
