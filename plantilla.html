@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseñador de Playeras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    #canvas-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-color: #f0f0f0;
+    }
+    #design-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasSidebarLabel">Opciones de Diseño</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Contenido del sidebar -->
+    <h6>Capas</h6>
+    <ul id="layer-list">
+      <!-- Listado de capas -->
+    </ul>
+    <h6>Prendas</h6>
+    <select id="prenda-select" class="form-select">
+      <option value="playera">Playera</option>
+      <!-- Otras prendas -->
+    </select>
+  </div>
+</div>
+
+<!-- Barra superior -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="btn btn-primary" id="add-text">Agregar Texto</button>
+    <button class="btn btn-secondary" id="add-image">Agregar Imagen</button>
+    <button class="btn btn-info" id="zoom-in">+</button>
+    <button class="btn btn-info" id="zoom-out">-</button>
+  </div>
+</nav>
+
+<!-- Contenedor del lienzo -->
+<div id="canvas-container">
+  <canvas id="design-canvas"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // JavaScript para manejar la lógica del diseño
+  const canvas = document.getElementById('design-canvas');
+  const ctx = canvas.getContext('2d');
+  let zoom = 1;
+
+  // Función para ajustar el zoom
+  function adjustZoom(factor) {
+    zoom *= factor;
+    canvas.style.transform = `scale(${zoom})`;
+  }
+
+  // Eventos de los botones
+  document.getElementById('zoom-in').addEventListener('click', () => adjustZoom(1.1));
+  document.getElementById('zoom-out').addEventListener('click', () => adjustZoom(0.9));
+
+  // Funciones para agregar texto e imagen (por implementar)
+  document.getElementById('add-text').addEventListener('click', () => {
+    // Lógica para agregar texto al lienzo
+  });
+
+  document.getElementById('add-image').addEventListener('click', () => {
+    // Lógica para agregar imagen al lienzo
+  });
+</script>
+
+</body>
+</html>
